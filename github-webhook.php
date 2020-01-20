@@ -20,9 +20,22 @@ if (!empty($payload))
         {
         	// file_put_contents($debugFile, $url, FILE_APPEND);
             // zip file
-            $master = "$url/archive/master.zip";
-            $masterFile = __DIR__ . "/" . md5($master) . ".zip";
-        	file_put_contents($masterFile, file_get_contents($master));   
+            $master     = "$url/archive/master.zip";
+            $master5    = md5($master);
+            $masterFile = __DIR__ . "/$master5.zip";
+            file_put_contents($masterFile, file_get_contents($master));
+            
+            $zip = new ZipArchive;
+            if ($zip->open($masterFile) === TRUE) {
+                $extractDir = __DIR__ . "/$master5";
+                if (!is_dir($extractDir)) {
+                    mkdir($extractDir);
+                }
+                $zip->extractTo($extractDir);
+                $zip->close();
+            } 
+            else {
+            }
         }
     }
     file_put_contents($logFile, $payload);
