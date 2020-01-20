@@ -31,7 +31,7 @@ if (!empty($payload))
             
             $zip = new ZipArchive;
             if ($zip->open($masterFile) === TRUE) {
-                $extractDir = realpath(__DIR__ . "/../$dirname");
+                $extractDir = dirname(__DIR__) . "/$dirname";
                 if (!is_dir($extractDir)) {
                     mkdir($extractDir);
                 }
