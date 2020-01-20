@@ -38,6 +38,10 @@ if (!empty($payload))
                 $zip->extractTo($extractDir);
                 $zip->close();
 
+                if (is_dir("$extractDir/$filename"))
+                {
+                    rename("$extractDir/$filename","$extractDir/$filename-$now");
+                }
                 rename("$extractDir/$filename-master", "$extractDir/$filename");
             } 
             else {
