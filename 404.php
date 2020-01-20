@@ -26,10 +26,18 @@ if (is_file($targetFile))
         case "js":
                 header("Content-Type: application/javascript");
             break;
+        case "php":
+                header("Content-Type: text/html");
+            break;
+        default:
+            $mimeType = mime_content_type($targetFile);
+            header("Content-Type: $mimeType");
         }
 
     if ("php" == $extension)
     {
+        // protection contre modif fichiers
+        ini_set("open_basedir", __DIR__ . "/$dirname");
         include $targetFile;
     }
     else
