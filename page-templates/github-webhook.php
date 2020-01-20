@@ -27,7 +27,9 @@ if (!empty($payload))
             $master     = "$url/archive/master.zip";
             $master5    = md5("$dirname/$filename");
             $masterFile = __DIR__ . "/$master5-$now.zip";
-            file_put_contents($masterFile, file_get_contents($master));
+            
+            $masterUrl = "$master?t=".time();   // évite le cache du serveur ?
+            file_put_contents($masterFile, file_get_contents($masterUrl));
             
             $zip = new ZipArchive;
             if ($zip->open($masterFile) === TRUE) {

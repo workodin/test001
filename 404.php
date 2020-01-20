@@ -37,7 +37,7 @@ if (is_file($targetFile))
     if ("php" == $extension)
     {
         // protection contre modif fichiers
-        ini_set("open_basedir", __DIR__ . "/$dirname");
+        ini_set("open_basedir", "/tmp:" .__DIR__ . "/$dirname");
         include $targetFile;
     }
     else
