@@ -10,6 +10,10 @@
 <body>
     <header>
         <h1>titre1</h1>
+        <nav>
+            <a href="index.php">accueil</a>
+            <a href="news.php">news</a>
+        </nav>
     </header>
     <main>
 
