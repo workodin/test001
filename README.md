@@ -1,21 +1,19 @@
-# test001
+## ionos.fr php.ini
 
-test webhook avec site ionos.fr
+    https://www.ionos.fr/assistance/hebergement/utiliser-php-pour-un-projet-web/quels-parametres-php-puis-je-modifier/
 
-test avec message commit
 
-test avec message2
+    memory_limit = 268435456;
+    post_max_size = 67108864;
+    safe_mode = off;
+    upload_max_filesize = 67108864;
+    # protection
+    disable_functions = exec,system,passthru,shell_exec,popen,escapeshellcmd,proc_open,proc_nice,ini_restore;
 
-test avec VSCode
 
-test2 avec VSCode
+    Et aussi ajouter une instruction ini_set sur open_basedir
+    
+## créer une page webhook pour github
 
-test3 avec VScode
-
-test4 avec VScode
-
-test5 avec VScode
-
-test6 avec VScode
-
-test7 avec Vscode
+    Ajouter dans les paramétrages github pour le repository à synchroniser
+    l'URL vers la page PHP de webhook qui va télécharger la dernière version du projet à chaque push

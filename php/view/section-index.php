@@ -1,9 +1,11 @@
 
-    <h1><?php echo date("H:i:s") ?></h1>
 
-    <img src="assets/images/photo.jpg" alt="photo">
 
     <section>
+        <h3>formulaire de contact</h3>
+    </section>
+    <section>
+        <img src="assets/images/photo.jpg" alt="photo">
         <h3>test</h3>
 <?php
 
@@ -11,4 +13,5 @@
 $tabList = glob("/*");
 var_dump($tabList);
 
-?>    </section>
+?>    
+    </section>
