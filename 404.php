@@ -12,13 +12,14 @@ extract(pathinfo($path));
 $dirname = trim($dirname, "/");
 $master5    = md5("$dirname");
 
-// SECURITY
-$gitCapability = "read";
 
-if (($gitCapability != "") && current_user_can($gitCapability) ) 
+$targetFile = __DIR__ . "/$dirname/$filename.$extension";
+if (is_file($targetFile))
 {
-    $targetFile = __DIR__ . "/$dirname/$filename.$extension";
-    if (is_file($targetFile))
+    // SECURITY
+    $gitCapability = "read";
+
+    if (($gitCapability != "") && current_user_can($gitCapability) ) 
     {
         status_header(200);
         
@@ -37,7 +38,7 @@ if (($gitCapability != "") && current_user_can($gitCapability) )
             default:
                 $mimeType = mime_content_type($targetFile);
                 header("Content-Type: $mimeType");
-            }
+        }
 
         if ("php" == $extension)
         {
@@ -52,6 +53,7 @@ if (($gitCapability != "") && current_user_can($gitCapability) )
     }
     else
     {
+        auth_redirect();
         echo "$targetFile";
     }
 
