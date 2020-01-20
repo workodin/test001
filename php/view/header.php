@@ -7,4 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1>titre1</h1>
+    </header>
+    <main>
+
