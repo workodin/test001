@@ -23,3 +23,17 @@ Hébergement Web avec promo à 1euro/mois la première année
 
     Ajouter dans les paramétrages github pour le repository à synchroniser
     l'URL vers la page PHP de webhook qui va télécharger la dernière version du projet à chaque push
+
+
+## vscode
+
+
+    screencast mode
+    pour afficher les touches spéciales
+
+    extensions
+    liveshare
+    intelephense
+    gitlens
+    markdown...
+
