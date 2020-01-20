@@ -18,21 +18,27 @@ if (!empty($payload))
     	$url = $tabPayload["repository"]["url"] ?? "";
         if ($url)
         {
+            $path = parse_url($url, PHP_URL_PATH);
+            extract(pathinfo($path));
+            // crée les variables $dirname, $filename, etc...
+
         	// file_put_contents($debugFile, $url, FILE_APPEND);
             // zip file
             $master     = "$url/archive/master.zip";
-            $master5    = md5($master);
+            $master5    = md5("$dirname/$filename");
             $masterFile = __DIR__ . "/$master5.zip";
             file_put_contents($masterFile, file_get_contents($master));
             
             $zip = new ZipArchive;
             if ($zip->open($masterFile) === TRUE) {
-                $extractDir = __DIR__ . "/$master5";
+                $extractDir = realpath(__DIR__ . "/../$dirname");
                 if (!is_dir($extractDir)) {
                     mkdir($extractDir);
                 }
                 $zip->extractTo($extractDir);
                 $zip->close();
+
+                rename("$extractDir/$filename-master", "$extractDir/$filename");
             } 
             else {
             }
