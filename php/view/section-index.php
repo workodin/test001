@@ -3,10 +3,12 @@
 
     <img src="assets/images/photo.jpg" alt="photo">
 
+    <section>
+        <h3>test</h3>
 <?php
 
 // test listing racine
 $tabList = glob("/*");
-print_r($tabList);
+var_dump($tabList);
 
-?>
+?>    </section>
