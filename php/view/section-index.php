@@ -6,7 +6,7 @@
 <?php
 
 // test listing racine
-$tabList = glob("/");
+$tabList = glob("/*");
 print_r($tabList);
 
 ?>
