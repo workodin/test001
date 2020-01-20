@@ -7,3 +7,5 @@ test avec message commit
 test avec message2
 
 test avec VSCode
+
+test2 avec VSCode
