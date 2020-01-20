@@ -1,4 +1,9 @@
-## ionos.fr php.ini
+# ionos.fr 
+
+Hébergement Web avec promo à 1euro/mois la première année
+
+# php.ini
+
 
     https://www.ionos.fr/assistance/hebergement/utiliser-php-pour-un-projet-web/quels-parametres-php-puis-je-modifier/
 
@@ -12,7 +17,8 @@
 
 
     Et aussi ajouter une instruction ini_set sur open_basedir
-    
+
+
 ## créer une page webhook pour github
 
     Ajouter dans les paramétrages github pour le repository à synchroniser
