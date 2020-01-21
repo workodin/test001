@@ -73,24 +73,26 @@
     </section>
     <section>
         <h3>formulaire de contact</h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias, sit, ipsa commodi omnis, cupiditate nihil blanditiis cumque quasi est delectus laborum soluta. Quaerat nesciunt eum dolorem veniam, sed sapiente.
-        </p>
-        <form action="">
-            <label>
-                <div>nom</div>                
-                <input type="text" name="nom" required placeholder="entrez votre nom">
-            </label>
-            <label>
-                <div>email</div>                
-                <input type="text" name="email" required placeholder="entrez votre email">
-            </label>
-            <label>
-                <div>message</div>                
-                <textarea name="message" cols="80" rows="8" placeholder="votre message"></textarea>
-            </label>
-            <button type="submit">envoyer</button>
-        </form>
+        <div class="ligne x2col">
+            <form action="">
+                <label>
+                    <div>nom</div>                
+                    <input type="text" name="nom" required placeholder="entrez votre nom">
+                </label>
+                <label>
+                    <div>email</div>                
+                    <input type="text" name="email" required placeholder="entrez votre email">
+                </label>
+                <label>
+                    <div>message</div>                
+                    <textarea name="message" cols="80" rows="8" placeholder="votre message"></textarea>
+                </label>
+                <button type="submit">envoyer</button>
+            </form>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias, sit, ipsa commodi omnis, cupiditate nihil blanditiis cumque quasi est delectus laborum soluta. Quaerat nesciunt eum dolorem veniam, sed sapiente.
+            </p>
+        </div>
     </section>
 
     <section>
