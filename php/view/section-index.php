@@ -77,9 +77,18 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias, sit, ipsa commodi omnis, cupiditate nihil blanditiis cumque quasi est delectus laborum soluta. Quaerat nesciunt eum dolorem veniam, sed sapiente.
         </p>
         <form action="">
-            <input type="text" name="nom" required placeholder="entrez votre nom">
-            <input type="text" name="email" required placeholder="entrez votre email">
-            <textarea name="message" cols="80" rows="8" placeholder="votre message"></textarea>
+            <label>
+                <div>nom</div>                
+                <input type="text" name="nom" required placeholder="entrez votre nom">
+            </label>
+            <label>
+                <div>email</div>                
+                <input type="text" name="email" required placeholder="entrez votre email">
+            </label>
+            <label>
+                <div>message</div>                
+                <textarea name="message" cols="80" rows="8" placeholder="votre message"></textarea>
+            </label>
             <button type="submit">envoyer</button>
         </form>
     </section>
