@@ -26,6 +26,7 @@ if (!empty($payload))
             // zip file
             // https://codeload.github.com/workodin/test001/zip/master
             // $master     = "$url/archive/master.zip";
+            // vraie url pour la dernière version du code ?
             $master     = "https://codeload.github.com/$dirname/$filename/zip/master";
             $master5    = md5("$dirname/$filename");
             $masterFile = __DIR__ . "/$master5-$now.zip";
