@@ -33,6 +33,8 @@ p, form, pre {
 form {
     display:flex;
     flex-direction:column;
+    max-width:100%;
+    min-width:360px;
 }
 form > * {
     padding:0.5rem;
