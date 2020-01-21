@@ -7,6 +7,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias, sit, ipsa commodi omnis, cupiditate nihil blanditiis cumque quasi est delectus laborum soluta. Quaerat nesciunt eum dolorem veniam, sed sapiente.
         </p>
         <form action="">
+            <input type="text" name="nom" required placeholder="entrez votre nom">
             <button type="submit">envoyer</button>
         </form>
     </section>
