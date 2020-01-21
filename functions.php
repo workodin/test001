@@ -80,6 +80,7 @@ function git_loader()
         } else {
             //auth_redirect();
             //echo "$targetFile";
+            echo $gitCapability;
             var_dump($_REQUEST);
         }
     }
