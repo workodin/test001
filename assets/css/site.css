@@ -85,21 +85,6 @@ main > section {
     min-width:240px;
     max-width:100%;
 }
-.ligne.x2col > * {
-    width:calc(100% / 2);
-}
-.ligne.x3col > * {
-    width:calc(100% / 3);
-}
-.ligne.x4col > * {
-    width:calc(100% / 4);
-}
-.ligne.x5col > * {
-    width:calc(100% / 5);
-}
-.ligne.x6col > * {
-    width:calc(100% / 6);
-}
 
 
 /* template */
@@ -122,22 +107,37 @@ h1 {
 /**
  * https://getbootstrap.com/docs/4.1/layout/overview/ 
  */
- /* Small devices (landscape phones, 576px and up) */
- @media (min-width: 576px) { 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+.ligne.x2col > * {
+    width:calc(100% / 2);
+}
+.ligne.x3col > * {
+    width:calc(100% / 3);
+}
+.ligne.x4col > * {
+    width:calc(100% / 4);
+}
+.ligne.x5col > * {
+    width:calc(100% / 5);
+}
+.ligne.x6col > * {
+    width:calc(100% / 6);
+}
 
- }
- 
- /* Medium devices (tablets, 768px and up) */
- @media (min-width: 768px) { 
+}
 
- }
- 
- /* Large devices (desktops, 992px and up) */
- @media (min-width: 992px) {
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
 
- }
- 
- /* Extra large devices (large desktops, 1200px and up) */
- @media (min-width: 1200px) { 
+}
 
- }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
