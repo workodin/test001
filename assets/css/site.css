@@ -46,7 +46,9 @@ form textarea {
     width:100%;
     max-width:100%;
 }
-
+input, textarea, button {
+    max-width:800px;
+}
 img {
     width:100%;
     max-width:100%;
