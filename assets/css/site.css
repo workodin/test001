@@ -13,8 +13,12 @@ body * {
 h1 {
     color:orange;
 }
-header, footer, h1, h2, h3 {
+header, footer {
     padding:1rem;
+}
+h1, h2, h3 {
+    padding-top:1rem;
+    padding-bottom:1rem;
 }
 
 p {
