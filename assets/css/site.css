@@ -57,6 +57,8 @@ img {
 .ligne > * {
     padding:1rem;
     text-align:justify;
+    min-width:360px;
+    max-width:100%;
 }
 .ligne.x2col > * {
     width:calc(100% / 2);
