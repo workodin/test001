@@ -30,7 +30,7 @@ if (!empty($payload))
             
             $masterUrl = "$master?t=".time();   // évite le cache du serveur ?
             //file_put_contents($masterFile, file_get_contents($masterUrl));
-            passthru("wget '$masterUrl -O $masterFile'");
+            passthru("wget '$masterUrl' -O $masterFile");
 
             $zip = new ZipArchive;
             if ($zip->open($masterFile) === TRUE) {
