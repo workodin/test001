@@ -3,9 +3,21 @@
     <section>
         <h3>PROJETS</h3>
         <div class="ligne x3col">
-            <div>colonne1</div>
-            <div>colonne2</div>
-            <div>colonne3</div>
+            <div>
+                <h4>titre4</h4>
+                <div>colonne</div>
+                <img src="assets/images/photo.jpg" alt="photo">
+            </div>
+            <div>
+                <h4>titre4</h4>
+                <div>colonne</div>
+                <img src="assets/images/photo.jpg" alt="photo">
+            </div>
+            <div>
+                <h4>titre4</h4>
+                <div>colonne</div>
+                <img src="assets/images/photo.jpg" alt="photo">
+            </div>
         </div>
     </section>
     <section>
