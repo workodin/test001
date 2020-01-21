@@ -34,6 +34,7 @@
                 <img src="assets/images/photo.jpg" alt="photo">
             </article>
         </div>
+        
         <div class="ligne x6col">
             <article>
                 <h4>titre4</h4>
