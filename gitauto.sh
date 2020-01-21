@@ -1,7 +1,8 @@
 
 date +"%F %T"
 
-listmodif=`find -name "\.git" -prune -o -type f -mmin 1`
+# cherche les fichiers modifiés dans la dernière minute
+listmodif=`find -not -path "*/.git/*" -type f -mmin 1`
 echo $listmodif
 
 if [ -n "$listmodif" ]
