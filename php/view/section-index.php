@@ -8,6 +8,7 @@
         </p>
         <form action="">
             <input type="text" name="nom" required placeholder="entrez votre nom">
+            <input type="text" name="email" required placeholder="entrez votre email">
             <button type="submit">envoyer</button>
         </form>
     </section>
