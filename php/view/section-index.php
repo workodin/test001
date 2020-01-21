@@ -68,7 +68,7 @@
     </section>
     <section>
         <h3>formulaire de contact</h3>
-        <div class="ligne x2col">
+        <div class="ligne x3col">
             <form action="">
                 <label>
                     <div>nom</div>                
