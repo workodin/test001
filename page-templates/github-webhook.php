@@ -31,9 +31,10 @@ if (!empty($payload))
             $masterUrl = "$master?t=".time();   // évite le cache du serveur ?
             
             // pb de cache de github qui ne donne pas la dernière version du master :-/
-            //file_put_contents($masterFile, file_get_contents($masterUrl));
-            //passthru("wget --no-cache --no-cookies '$masterUrl' -O $masterFile");
-            passthru("wget --no-cache '$masterUrl' -O $masterFile");
+            // file_put_contents($masterFile, file_get_contents($masterUrl));
+            // passthru("wget --no-cache --no-cookies '$masterUrl' -O $masterFile");
+            // passthru("wget --no-cache '$masterUrl' -O $masterFile");
+            passthru("wget '$masterUrl' -O $masterFile");
 
             $zip = new ZipArchive;
             if ($zip->open($masterFile) === TRUE) {
