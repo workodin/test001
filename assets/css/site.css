@@ -60,6 +60,7 @@ main > section {
     max-width:1280px;
     margin: 0 auto;
 }
+
 /* FLEX */
 .ligne {
     display:flex;
