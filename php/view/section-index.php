@@ -66,6 +66,7 @@
             </article>
         </div>
     </section>
+    
     <section>
         <h3>formulaire de contact</h3>
         <div class="ligne x3col">
