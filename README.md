@@ -2,7 +2,7 @@
 
 Hébergement Web avec promo à 1euro/mois la première année
 
-# php.ini
+## php.ini
 
 
     https://www.ionos.fr/assistance/hebergement/utiliser-php-pour-un-projet-web/quels-parametres-php-puis-je-modifier/
