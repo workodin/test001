@@ -77,3 +77,10 @@ fi
 ## WinSCP et Synchro entre dossiers
 
     Ctl+U pour lancer la synchro entre dossiers
+
+
+## Mobile First et Media Queries
+
+
+    https://getbootstrap.com/docs/4.1/layout/overview/
+
