@@ -21,9 +21,13 @@ h1, h2, h3 {
     padding-bottom:1rem;
 }
 
-p {
+h2, h3, form {
+    padding-left:1rem;
+}
+
+p, form {
     max-width:640px;
-    padding:0.5rem;
+    padding:1rem;
 }
 
 img {
