@@ -64,11 +64,6 @@
                 <div>colonne</div>
                 <img src="assets/images/photo.jpg" alt="photo">
             </article>
-            <article>
-                <h4>titre4</h4>
-                <div>colonne</div>
-                <img src="assets/images/photo.jpg" alt="photo">
-            </article>
         </div>
     </section>
     <section>
