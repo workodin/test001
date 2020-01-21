@@ -37,3 +37,8 @@ Hébergement Web avec promo à 1euro/mois la première année
     gitlens
     markdown...
 
+## git 
+
+    en une seule ligne de commande
+    
+    git add -A; git commit -a -m "..."; git push
