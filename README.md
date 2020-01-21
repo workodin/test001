@@ -73,3 +73,7 @@ then
 fi
 
 ```
+
+## WinSCP et Synchro entre dossiers
+
+    Ctl+U pour lancer la synchro entre dossiers
