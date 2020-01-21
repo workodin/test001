@@ -33,8 +33,8 @@ if (!empty($payload))
             $master5    = md5("$dirname/$filename");
             $masterFile = __DIR__ . "/$master5-$now.zip";
             
-            //$masterUrl = "$master?t=".time();   // évite le cache du serveur ?
-            $masterUrl = "$master";   // évite le cache du serveur ?
+            $masterUrl = "$master?t=".time();   // évite le cache du serveur ?
+            //$masterUrl = "$master";   // évite le cache du serveur ?
             
             // pb de cache de github qui ne donne pas la dernière version du master :-/
             file_put_contents($masterFile, file_get_contents($masterUrl));
