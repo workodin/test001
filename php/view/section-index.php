@@ -1,6 +1,13 @@
 
 
-
+    <section>
+        <h3>PROJETS</h3>
+        <div class="ligne x3col">
+            <div>colonne1</div>
+            <div>colonne2</div>
+            <div>colonne3</div>
+        </div>
+    </section>
     <section>
         <h3>formulaire de contact</h3>
         <p>
@@ -13,6 +20,7 @@
             <button type="submit">envoyer</button>
         </form>
     </section>
+
     <section>
         <img src="assets/images/photo.jpg" alt="photo">
         <h3>test</h3>
