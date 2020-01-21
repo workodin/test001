@@ -56,7 +56,7 @@ if (!empty($payload))
             }
         }
     }
-    file_put_contents($logFile, $payload);
+    //file_put_contents($logFile, $payload);
 
     echo $json;
 }
