@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-    <header>
-        <h1>titre1</h1>
-        <nav>
-            <a href="index.php">accueil</a>
-            <a href="news.php">news</a>
-        </nav>
-    </header>
-    <main>
+    <div class="page">
+        <header>
+            <h1>titre1</h1>
+            <nav>
+                <a href="index.php">accueil</a>
+                <a href="news.php">news</a>
+            </nav>
+        </header>
+        <main>
 
