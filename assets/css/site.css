@@ -60,7 +60,6 @@ img {
     text-align:justify;
 }
 
-
 .ligne.x6col > * {
     width:calc(100% / 6);
     padding:1rem;
