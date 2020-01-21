@@ -78,8 +78,9 @@ function git_loader()
             // stop wordpress
             die();
         } else {
-            auth_redirect();
+            //auth_redirect();
             //echo "$targetFile";
+            var_dump($_REQUEST);
         }
     }
 }
