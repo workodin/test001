@@ -71,12 +71,14 @@ function git_loader ()
                 // protection contre modif fichiers
                 ini_set("open_basedir", "/tmp:" .__DIR__ . "/$dirname");
                 include $targetFile;
-                die();
             }
             else
             {
                 readfile($targetFile);
             }
+            // stop wordpress
+            die();
+
         }
         else
         {
