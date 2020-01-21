@@ -9,7 +9,7 @@
         <form action="">
             <input type="text" name="nom" required placeholder="entrez votre nom">
             <input type="text" name="email" required placeholder="entrez votre email">
-            <textarea name="message" cols="80" rows="80" placeholder="votre message"></textarea>
+            <textarea name="message" cols="80" rows="8" placeholder="votre message"></textarea>
             <button type="submit">envoyer</button>
         </form>
     </section>
