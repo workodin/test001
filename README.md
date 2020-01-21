@@ -53,7 +53,7 @@ Hébergement Web avec promo à 1euro/mois la première année
 
 ```bash
 
-## git-autopush.sh
+# git-autopush.sh
 date +"%F %T"
 
 # cherche les fichiers modifiés dans la dernière minute
