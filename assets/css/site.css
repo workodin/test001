@@ -10,9 +10,6 @@ body * {
     box-sizing: border-box;
 }
 
-h1 {
-    color:orange;
-}
 header, footer {
     padding:1rem;
 }
@@ -102,4 +99,9 @@ main > section {
 /* template */
 header, footer {
     text-align:center;
+}
+
+/* COLORS */
+h1 {
+    color:orange;
 }
