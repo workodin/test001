@@ -25,9 +25,16 @@ h2, h3, form {
     padding-left:1rem;
 }
 
-p, form, pre {
+p, form {
     max-width:640px;
     padding:1rem;
+    display:block;
+    margin:0 auto;
+}
+
+pre {
+    padding:1rem;
+    max-width:100%;
 }
 
 form {
