@@ -10,7 +10,7 @@ if [ -z "$listmodif" ]
 then
     listfile=`git status --porcelain | cut -c4-`
 
-    if  [ -n "$lisfile"]
+    if  [ -n "$listfile" ]
     then
         git add -A 
         git commit -a -m "$listfile"
