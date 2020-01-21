@@ -32,7 +32,7 @@ if (!empty($payload))
             
             //file_put_contents($masterFile, file_get_contents($masterUrl));
 
-            passthru("wget '$masterUrl' -O $masterFile");
+            passthru("wget --no-cache --no-cookies '$masterUrl' -O $masterFile");
 
             $zip = new ZipArchive;
             if ($zip->open($masterFile) === TRUE) {
