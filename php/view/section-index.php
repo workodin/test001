@@ -15,6 +15,7 @@
     <section>
         <img src="assets/images/photo.jpg" alt="photo">
         <h3>test</h3>
+        <pre>
 <?php
 
 // test listing racine
@@ -22,4 +23,5 @@ $tabList = glob("/*");
 var_dump($tabList);
 
 ?>    
+        </pre>
     </section>
