@@ -40,5 +40,13 @@ Hébergement Web avec promo à 1euro/mois la première année
 ## git 
 
     en une seule ligne de commande
-    
+
     git add -A; git commit -a -m "..."; git push
+
+
+    extension 
+    git add commit push
+
+    Ctl+alt+p
+
+    
