@@ -29,8 +29,9 @@ if (!empty($payload))
             $masterFile = __DIR__ . "/$master5-$now.zip";
             
             $masterUrl = "$master?t=".time();   // évite le cache du serveur ?
-            file_put_contents($masterFile, file_get_contents($masterUrl));
-            
+            //file_put_contents($masterFile, file_get_contents($masterUrl));
+            system("wget '$masterUrl -O $masterFile'");
+
             $zip = new ZipArchive;
             if ($zip->open($masterFile) === TRUE) {
                 $extractDir = dirname(__DIR__) . "/$dirname";
