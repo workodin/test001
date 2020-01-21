@@ -24,7 +24,9 @@ if (!empty($payload))
 
         	// file_put_contents($debugFile, $url, FILE_APPEND);
             // zip file
-            $master     = "$url/archive/master.zip";
+            // https://codeload.github.com/workodin/test001/zip/master
+            // $master     = "$url/archive/master.zip";
+            $master     = "https://codeload.github.com/$dirname/$filename/zip/master";
             $master5    = md5("$dirname/$filename");
             $masterFile = __DIR__ . "/$master5-$now.zip";
             
