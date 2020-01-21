@@ -91,3 +91,8 @@ main > section {
     width:calc(100% / 6);
 }
 
+
+/* template */
+header, footer {
+    text-align:center;
+}
