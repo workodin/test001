@@ -1,10 +1,10 @@
 
 date +"%F %T"
 
-listmodif=`find -name "^." -type f -mmin 1`
+listmodif=`find -name "\.git"-prune -o -type f -mmin 1`
 echo $listmodif
 
-if [ -z "$listmodif" ]
+if [ -n "$listmodif" ]
 then
     listfile=`git status --porcelain | cut -c4-`
 
