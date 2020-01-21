@@ -30,6 +30,11 @@ p, form, pre {
     padding:1rem;
 }
 
+form {
+    display:flex;
+    flex-direction:column;
+}
+
 img {
     width:100%;
     max-width:100%;
