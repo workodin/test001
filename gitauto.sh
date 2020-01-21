@@ -1,7 +1,7 @@
 
 date +"%F %T"
 
-listmodif=`find -name "\.git"-prune -o -type f -mmin 1`
+listmodif=`find -name "\.git" -prune -o -type f -mmin 1`
 echo $listmodif
 
 if [ -n "$listmodif" ]
