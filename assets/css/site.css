@@ -108,6 +108,12 @@ header, footer {
 }
 
 /* COLORS */
+header {
+    background-color: #ffffff;
+}
+footer {
+    background-color: #666666;
+}
 h1 {
     color:orange;
 }
@@ -133,5 +139,5 @@ h1 {
  
  /* Extra large devices (large desktops, 1200px and up) */
  @media (min-width: 1200px) { 
-     
+
  }
