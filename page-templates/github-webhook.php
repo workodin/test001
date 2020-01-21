@@ -21,13 +21,13 @@ if (!empty($payload))
             $path = parse_url($url, PHP_URL_PATH);
             extract(pathinfo($path));
             // crée les variables $dirname, $filename, etc...
-
+            // enlève le / au début de $dirname
+            $dirname     = trim($dirname, "/");
         	// file_put_contents($debugFile, $url, FILE_APPEND);
             // zip file
             // https://codeload.github.com/workodin/test001/zip/master
             // $master     = "$url/archive/master.zip";
             // vraie url pour la dernière version du code ?
-            $dirname     = trim($dirname, "/");
             $master     = "https://codeload.github.com/$dirname/$filename/zip/master";
             
             $master5    = md5("$dirname/$filename");
