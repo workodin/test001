@@ -92,6 +92,37 @@
     </section>
 
     <section>
+        <h3>Loisirs</h3>
+        <div class="ligne x5col">
+            <article>
+                <h4>titre4</h4>
+                <div>colonne</div>
+                <img src="assets/images/photo.jpg" alt="photo">
+            </article>
+            <article>
+                <h4>titre4</h4>
+                <div>colonne</div>
+                <img src="assets/images/photo.jpg" alt="photo">
+            </article>
+            <article>
+                <h4>titre4</h4>
+                <div>colonne</div>
+                <img src="assets/images/photo.jpg" alt="photo">
+            </article>
+            <article>
+                <h4>titre4</h4>
+                <div>colonne</div>
+                <img src="assets/images/photo.jpg" alt="photo">
+            </article>
+            <article>
+                <h4>titre4</h4>
+                <div>colonne</div>
+                <img src="assets/images/photo.jpg" alt="photo">
+            </article>
+        </div>
+    </section>
+
+    <section>
         <img src="assets/images/photo.jpg" alt="photo">
         <h3>test</h3>
         <pre>
