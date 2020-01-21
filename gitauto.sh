@@ -1,7 +1,7 @@
 
 date +%F%T
 
-listfile=`git status -s | cut -d " " -f2`
+listfile=`git status --porcelain | cut -c4-`
 
 for f in "$listfile"
 do
