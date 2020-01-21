@@ -1,14 +1,14 @@
 
 date +%F%T
 
-listfile=`git status -s | cut -d" " -f2`
+listfile=`git status -s | cut -d " " -f2`
 
 for f in "$listfile"
 do
     echo $f
 done
 
-listmodif=`find -type f -mmin 1`
+listmodif=`find -name "^." -type f -mmin 1`
 
 echo $listmodif
 
