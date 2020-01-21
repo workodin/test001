@@ -39,6 +39,11 @@ form > * {
     margin:0.5rem;
     font-family:'Courier New', Courier, monospace;
 }
+form textarea {
+    width:100%;
+    max-width:100%;
+}
+
 img {
     width:100%;
     max-width:100%;
