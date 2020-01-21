@@ -83,7 +83,7 @@ function git_loader ()
         else
         {
             auth_redirect();
-            echo "$targetFile";
+            //echo "$targetFile";
         }
     
     }
