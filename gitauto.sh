@@ -1,5 +1,5 @@
 
-date +%F%T
+date +"%F %T"
 
 
 listmodif=`find -name "^." -type f -mmin 1`
