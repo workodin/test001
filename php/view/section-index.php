@@ -38,7 +38,7 @@
 
     <section>
         <h3>COMPETENCES</h3>
-        <div class="ligne x6col">
+        <div class="ligne x5col">
             <article>
                 <h4>titre4</h4>
                 <div>colonne</div>
