@@ -49,7 +49,7 @@ function git_loader()
             $gitCapability = "";
         }
 
-        if (($gitCapability != "") && current_user_can($gitCapability)) {
+        if (($gitCapability == "") || current_user_can($gitCapability)) {
             status_header(200);
 
             $extension = strtolower($extension);
