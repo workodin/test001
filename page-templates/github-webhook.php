@@ -32,7 +32,8 @@ if (!empty($payload))
             
             // pb de cache de github qui ne donne pas la dernière version du master :-/
             //file_put_contents($masterFile, file_get_contents($masterUrl));
-            passthru("wget --no-cache --no-cookies '$masterUrl' -O $masterFile");
+            //passthru("wget --no-cache --no-cookies '$masterUrl' -O $masterFile");
+            passthru("wget --no-cache '$masterUrl' -O $masterFile");
 
             $zip = new ZipArchive;
             if ($zip->open($masterFile) === TRUE) {
