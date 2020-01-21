@@ -53,7 +53,9 @@ img {
     flex-wrap:wrap;
     width:100%;
 }
+
 .ligne .x3col {
     width:calc(100% / 3);
 }
+
 
